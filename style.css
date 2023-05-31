@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul: #060821;
+    --rosa: #C12D6D;
+    --branco: #ffffff;
+
+    --font1: 'Titillium Web', sans-serif;
+    --font2: 'Righteous', cursive;
+}
+
+h1 {
+    font-size: 80px;
+    color: #FBC02C;
+    text-align: right;
+    position: absolute;
+    left: 900px;
+    top: 320px;
+    text-shadow: 0 1px 0 #ff0000,
+        0 2px 0 #2c0ed2,
+        0 3px 0 #df4e06,
+        0 4px 0 #e80808,
+        0 5px 0 #e78907,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+    transform: rotate(-10deg);
+    box-shadow: 0px 0px 30px 20px hsl(321, 43%, 36%);
+
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    /*background-image: url('../BlaMovi/25-05-2023/bla/imagem/');*/
+
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+    /* background-color: aqua; */
+
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    color: #FBC02C;
+}
+
+#divBusca {
+    background-color: #fff;
+    border: solid 1px;
+    border-radius: 15px;
+    width: 400px;
+    height: 30px;
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 18px;
+    border: 2px solid #C12D6D;
+    border-radius: 30px;
+    height: 30px;
+    width: 600px;
+}
+
+body {
+    background-color: #0e0e0e;
+}
+
+.menu ul {
+    display: flex;
+
+}
+
+.menu ul li {
+    text-decoration: none;
+}
+
+.menu ul a {
+    color: #FBC02C;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: var(--font2);
+    align-items: center;
+    
+}
+.menu ul a:hover{
+    color: #C12D6D;
+    transform: scale(2.1); 
+    box-shadow: 0 5px 15px rgba(239, 180, 4, 0.6);
+
+}
+
+.banner {
+
+    background-image: url("../BlaMovi/Imagem/Movie-projector-retro-style_3840x2160\ 1.jpg");
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.favoritos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.poster {
+    justify-content: space-between;
+}
+
+.favoritos img {
+    width: 250px;
+    height: 400px;
+    /* margin: 10px; */
+    border-radius: 30px;
+    /* border: 2px solid #C12D6D; */
+    padding: 20px;
+
+}
+
+h2 {
+    font-family: var(--font2);
+    color: #FBC02C;
+    margin: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-family: var(--font2);
+    color: #FBC02C;
+}
+
+.poster div{
+    display: flex;
+}
+
+.poster div img {
+    width: 30px;
+    height: 30px;
+}
+
+span {
+    font-family: var(--font2);
+    color: var(--branco);
+}
+
+footer {
+    /* display: flex; */
+    background-image: url(../BlaMovi/Imagem/footer.png);
+    margin: 30px;
+}
+
+
+.contato {
+    display: flex;
+    margin: 20px;
+}
+
+.contato div img {
+    width: 40px;
+    height: 40px;
+}
+
+footer div img {
+    width: 40px;
+    height: 40px;
+}
+
+footer>div {
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    width: 100%;
+    height: 50px;
+    /* background-color: #FBC02C; */
+    width: 100%;
+
+}
+
+footer ul a {
+    font-family: var(--font2);
+    color: var(--branco);
+    text-decoration: none;
+}
+
+footer ul a:{
+    color: #C12D6D;
+    transform: scale(2.1); 
+    box-shadow: 0 5px 15px rgba(239, 180, 4, 0.6);
+}
+
+.poster:hover {
+    scale: 1.05;
+    box-shadow: 0px 0px 10px 5px hsl(321, 43%, 36%);
+        /* border: 5px solid hsl(321, 66%, 35%); */
+}
+
+.poster {
+    background-color: #000;
+    border-radius: 30px;
+}
