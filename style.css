@@ -15,12 +15,12 @@
 
 h1 {
     font-size: 80px;
-    color: #FBC02C;
+    /* color: #FBC02C; */
     text-align: right;
     position: absolute;
     left: 900px;
     top: 320px;
-    text-shadow: 0 1px 0 #ff0000,
+    /* text-shadow: 0 1px 0 #ff0000,
         0 2px 0 #2c0ed2,
         0 3px 0 #df4e06,
         0 4px 0 #e80808,
@@ -31,15 +31,31 @@ h1 {
         0 3px 5px rgba(0, 0, 0, .2),
         0 5px 10px rgba(0, 0, 0, .25),
         0 10px 10px rgba(0, 0, 0, .2),
-        0 20px 20px rgba(0, 0, 0, .15);
+        0 20px 20px rgba(0, 0, 0, .15); */
     transform: rotate(-10deg);
-    box-shadow: 0px 0px 30px 20px hsl(321, 43%, 36%);
+    /* box-shadow: 0px 0px 25px 25px rgba(239, 4, 28, 0.6); */
+    /* text-shadow: 0px 0px 25px 25px rgba(239, 4, 28, 0.6); */
+    color: #FBC02C;
+    text-shadow:
+        0 0 7px #1e1616,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #fff,
+        0 0 82px #fff,
+        0 0 92px #fff,
+        0 0 102px #fff,
+        0 0 151px #fff;
+    background: #3F6174;
+    background: repeating-radial-gradient(ellipse farthest-corner at left center, #3F6174 0%, #562835 69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
 header {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     /*background-image: url('../BlaMovi/25-05-2023/bla/imagem/');*/
 
@@ -61,12 +77,14 @@ header img {
     color: #FBC02C;
 }
 
-#divBusca {
+#divbusca {
     background-color: #fff;
     border: solid 1px;
     border-radius: 15px;
-    width: 400px;
-    height: 30px;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 30px;
 }
 
 #txtBusca {
@@ -75,10 +93,12 @@ header img {
     padding-left: 5px;
     font-style: italic;
     font-size: 18px;
-    border: 2px solid #C12D6D;
+    border: 3px solid #e40810;
     border-radius: 30px;
-    height: 30px;
-    width: 600px;
+    height: 100%;
+    max-width: 30px;
+    width: 100%;
+    max-width: 400px;
 }
 
 body {
@@ -87,6 +107,7 @@ body {
 
 .menu ul {
     display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -98,28 +119,58 @@ body {
     color: #FBC02C;
     margin: 10px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-family: var(--font2);
     align-items: center;
-    
-}
-.menu ul a:hover{
-    color: #C12D6D;
-    transform: scale(2.1); 
-    box-shadow: 0 5px 15px rgba(239, 180, 4, 0.6);
 
 }
+
+.menu ul a:hover {
+    color: #e40810;
+    transform: scale(1.5);
+    /* transform: rotate(20deg); */
+    text-shadow: 0px 5px 10px rgba(239, 180, 4, 0.6);
+
+}
+
+.hamburguer {
+    width: 50px;
+    height: 50px;
+    
+    fill: var(--branco);
+}
+
 
 .banner {
 
-    background-image: url("../BlaMovi/Imagem/Movie-projector-retro-style_3840x2160\ 1.jpg");
+    background-image:
+        url("../BlaMovi/Imagem/Movie-projector-retro-style_3840x2160\ 1.jpg");
     width: 100%;
-    height: 800px;
-    background-repeat: no-repeat;
+    max-width: 1920px;
+    height: 700px;
+
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+
 
 }
+
+.onda {
+    width: 100%;
+    max-width: 1920px;
+    height: 300px;
+    background-image:url(Imagem/wave.svg) ;
+   background-repeat: no-repeat; 
+   background-size: cover;
+   position: absolute;
+   bottom: 0;
+
+}
+
 
 .favoritos {
     display: flex;
@@ -133,9 +184,11 @@ body {
 
 .cards {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    margin-bottom: 60px;
 
 }
 
@@ -143,10 +196,13 @@ body {
     justify-content: space-between;
 }
 
-.favoritos img {
-    width: 250px;
-    height: 400px;
+.poster>img {
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    max-height: 400px;
     /* margin: 10px; */
+
     border-radius: 30px;
     /* border: 2px solid #C12D6D; */
     padding: 20px;
@@ -164,15 +220,34 @@ h2 {
 h3 {
     font-family: var(--font2);
     color: #FBC02C;
+    text-align: center;
+
 }
 
-.poster div{
+.poster div {
     display: flex;
+    justify-content: center;
+
+
 }
 
 .poster div img {
     width: 30px;
     height: 30px;
+    justify-content: center;
+}
+
+.poster:hover {
+    scale: 1.05;
+    box-shadow: 0px 0px 10px 5px hsl(356, 92%, 48%);
+    /* border: 5px solid hsl(321, 66%, 35%); */
+    transform: rotate(360deg);
+    transition-duration: 2s;
+}
+
+.poster {
+    background-color: #000;
+    border-radius: 30px;
 }
 
 span {
@@ -182,60 +257,113 @@ span {
 
 footer {
     /* display: flex; */
-    background-image: url(../BlaMovi/Imagem/footer.png);
+    background-image: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(1, 0, 20, 0) 25%, rgba(0, 0, 7, 0) 75%, rgba(0, 0, 0, 1) 100%), url(../BlaMovi/Imagem/footer.png);
     margin: 30px;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height: 100px;
 }
 
 
 .contato {
     display: flex;
     margin: 20px;
+    justify-content: center;
+}
+
+.contato a {
+    font-family: var(--font2);
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 18px;
 }
 
 .contato div img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 footer div img {
     width: 40px;
-    height: 40px;
+    height: 30px;
 }
 
 footer>div {
     width: 100%;
+    max-width: 1920px;
 }
 
 footer ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    margin: 30px;
     width: 100%;
     height: 50px;
     /* background-color: #FBC02C; */
-    width: 100%;
+    margin: 10px;
 
 }
 
 footer ul a {
     font-family: var(--font2);
-    color: var(--branco);
+    color: #FBC02C;
     text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
 }
 
-footer ul a:{
-    color: #C12D6D;
-    transform: scale(2.1); 
-    box-shadow: 0 5px 15px rgba(239, 180, 4, 0.6);
+footer ul a:hover {
+    color: #e408;
+    transform: scale(2.1);
+    text-shadow: 0px 5px 10px rgba(239, 180, 4, 0.6);
 }
 
-.poster:hover {
-    scale: 1.05;
-    box-shadow: 0px 0px 10px 5px hsl(321, 43%, 36%);
-        /* border: 5px solid hsl(321, 66%, 35%); */
+.contato img {
+    width: 100%;
+    max-width: 40px;
+    height: 100%;
+    max-height: 40px;
+    margin: 10px;
 }
 
-.poster {
-    background-color: #000;
-    border-radius: 30px;
+
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1365px) {
+    h1 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .card {}
+
+    .poster>img {}
+
+    .poster:hover {
+        box-shadow: 0px 0px 10px 5px hsl(356, 92%, 48%);
+        border: 5px solid hsl(321, 66%, 35%);
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+
+    .menu ul a {
+        display: none;
+
+    }
+
+    #divbusca {
+        display: none;
+    }
+
+    .hamburguer {
+        display: initial;
+    }
+
 }
