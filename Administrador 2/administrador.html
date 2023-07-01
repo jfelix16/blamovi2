@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlaMovi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="../img/img/favicon2.svg" type="image;x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Titillium+Web:wght@600&display=swap"
+    rel="stylesheet">
+  <!-- <link href="stylesheet" s href="reset.css"> -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Titillium+Web:wght@600&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  
+  <header>
+
+    <div class="posicionamento_header posicionamento">
+      <div class="logo">
+          <img src="../Cadastro/imagens/logo.png" alt="logo">
+          <span>Blámovi</span>
+      </div>
+
+        <div id="divBusca">
+            <alt="Buscar..." />
+            <input type="text" id="txtBusca" placeholder="" />
+            <button id="btnBusca">Buscar</button>
+        </div>
+        <nav>
+            <a href="../Home/home.html">Home</a>
+            <a href="../Favoritos/favoritos.html">Favoritos</a>
+            <a href="">Administrado</a>
+            <a href="../Login/login.html">Login</a>
+        </nav>
+    </div>
+</header>
+  <main class="banner">
+    <div class="container">
+      <a class="links" id="paracadastro"></a>
+      <a class="links" id="paralogin"></a>
+
+      <div class="content">
+        <!--FORMULÁRIO DE CADASTRO-->
+        <div id="cadastro">
+          <form method="post" action="">
+            <h1>Administrador</h1>
+
+            <div class="input">
+              <img class="form-label" src="../Cadastro/imagens/icon User.png">
+              <div class="input-nome">
+                <label for="nome_cad">Seu Nome</label>
+                <input id="nome_cad" name="nome_cad" required="required" type="text">
+              </div>
+
+            </div>
+
+            <div class="input">
+              <img class="form-label" src="../Cadastro/imagens/Group Message.png">
+              <div class="input-email">
+                <label for="email_cad">Seu e-mail</label>
+                <input id="email_cad" name="email_cad" required="required" type="email" />
+              </div>
+            </div>
+
+            <div class="input">
+              <img class="form-label" src="../Cadastro/imagens/Lock.png">
+              <div class="input-senha">
+                <label for="senha_cad">Sua senha</label>
+                <input id="senha_cad" name="senha_cad" required="required" type="password" />
+              </div>
+            </div>
+
+            <div class="input">
+              <img class="form-label" src="../Cadastro/imagens/Lock.png">
+              <div class="input-conf-senha">
+
+                <label for="confirma-senha">Confirmar Senha</label>
+                <input id="confirma-senha" name="confirma-senha" required="required" type="password" />
+              </div>
+            </div>
+
+            <div class="input">
+              <img class="form-label" src="../Cadastro/imagens/icon User.png">
+              <div class="input-user">
+                <label for="user">Usuario</label>
+                <input id="user" name="user" required="required" type="text">
+              </div>
+
+            </div>
+
+            
+            <div class="input">
+              <img class="form-label" src="../Cadastro/imagens/icon User.png">
+              <div class="input-foto">
+                <label for="foto">Foto</label>
+                <input id="foto" name="foto" required="required" type="file" />
+              </div>
+
+            </div>
+
+
+
+            <div class="input-submit">
+              <input type="submit" value="Cadastrar" />
+            </div>
+
+
+            <hr class="linha"> 
+            <div class="alinhamento">
+              <p class="link2">Já tem conta?<a href="#paralogin"> <br>Cadastre-se agora! </a></p>
+            </div>
+
+          </form>
+
+          <div class="contato">
+
+            <div class="imagem">
+              <img src="../Cadastro/imagens/logo.png">
+              <!-- <a href="contato@blamovi.com">contato@blamovi.com</a> -->
+              <img src="../Cadastro/imagens/redeSocial/faceBranco.svg" alt="">
+              <img src="../Cadastro/imagens/redeSocial/InstaBranco.svg" alt="">
+              <img src="../Cadastro/imagens/redeSocial/twitterBranco.svg" alt="">
+              <img src="../Cadastro/imagens/redeSocial/WhatsBranco.svg" alt="">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <div>
+      <ul>
+        <li><a href="#" title="Home">Favoritos</a></li>
+        <li><a href="#" title="login">Home</a></li>
+        <li><a href="#" title="pesquisar">Pesquisar</a></li>
+        <li><a href="#" title="login">Login</a></li>
+        <li><a href="#" title="noticias">Noticias</a></li>
+        <li><a href="#" title="informações">Informações</a></li>
+        <li><a href="#" title="Fale Conosco">Fale Conosco</a></li>
+
+      </ul>
+
+    </div>
+
+  </footer>
+
+</body>
+
+
+</html>
