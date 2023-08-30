@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlaMovi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="../img/img/favicon2.svg" type="image;x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Titillium+Web:wght@600&display=swap"
+        rel="stylesheet">
+    <!-- <link href="stylesheet" s href="reset.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+    
+    <div class="content">      
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <form method="post" action=""> 
+          <h1>Login</h1> 
+          <p> 
+            <label for="email_login">Seu e-mail</label>
+            <input id="email_login" name="email_login" required="required" type="text" placeholder="contato@htmlecsspro.com"/>
+          </p>
+          
+          <p> 
+            <label for="senha_login">Sua senha</label>
+            <input id="senha_login" name="senha_login" required="required" type="password" placeholder="1234" /> 
+          </p>
+          
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+          
+          <p> 
+            <input type="submit" value="Logar" /> 
+          </p>
+          
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+          
+          <p> 
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Luiz Augusto" />
+          </p>
+          
+          <p> 
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+          </p>
+          
+          <p> 
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="1234"/>
+          </p>
+          
+          <p> 
+            <input type="submit" value="Cadastrar"/> 
+          </p>
+          
+          <p class="link">  
+            Já tem conta?
+            <a href="#paralogin"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div> 
+
+</main>
+    <footer>
+        <div>
+            <ul>
+                <li><a href="#" title="Home">Favoritos</a></li>
+                <li><a href="#" title="login">Home</a></li>
+                <li><a href="#" title="pesquisar">Pesquisar</a></li>
+                <li><a href="#" title="login">Login</a></li>
+                <li><a href="#" title="noticias">Noticias</a></li>
+                <li><a href="#" title="informações">Informações</a></li>
+                <!-- <li><a href="#" title="Fale Conosco">Fale Conosco</a></li> -->
+
+            </ul>
+
+        </div>
+
+        <div class="contato">
+
+            <div>
+                <img src="../BlaMovi/Imagem/LOGO.png">
+                <a href="contato@blamovi.com">contato@blamovi.com</a>
+                <img src="../BlaMovi/Imagem/redeSocial/facebook.svg" alt="">
+                <img src="../BlaMovi/Imagem/redeSocial/instagram.svg" alt="">
+                <img src="../BlaMovi/Imagem/redeSocial/twitter.svg" alt="">
+                <img src="../BlaMovi/Imagem/redeSocial/WhatsVerde.svg" alt="">
+
+            </div>
+
+
+
+    </footer>
+
+
+</body>
+
+
+</html>
+///////////////////////////////////////
+
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul: #060821;
+    --rosa: #C12D6D;
+    --branco: #ffffff;
+
+    --font1: 'Titillium Web', sans-serif;
+    --font2: 'Righteous', cursive;
+}
+
+/* h1 { */
+    /* font-size: 80px; */
+    /* color: #FBC02C; */
+    /* text-align: right;
+    position: absolute;
+    left: 900px;
+    top: 320px; */
+    /* text-shadow: 0 1px 0 #ff0000,
+        0 2px 0 #2c0ed2,
+        0 3px 0 #df4e06,
+        0 4px 0 #e80808,
+        0 5px 0 #e78907,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15); */
+    /* transform: rotate(-10deg); */
+    /* box-shadow: 0px 0px 25px 25px rgba(239, 4, 28, 0.6); */
+    /* text-shadow: 0px 0px 25px 25px rgba(239, 4, 28, 0.6); */
+    /* color: #FBC02C;
+    text-shadow:
+        0 0 7px #1e1616,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #fff,
+        0 0 82px #fff,
+        0 0 92px #fff,
+        0 0 102px #fff,
+        0 0 151px #fff;
+    background: #3F6174;
+    background: repeating-radial-gradient(ellipse farthest-corner at left center, #3F6174 0%, #562835 69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }*/
+
+ 
+
+
+
+header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /*background-image: url('../BlaMovi/25-05-2023/bla/imagem/');*/
+
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+    /* background-color: aqua; */
+
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    color: #FBC02C;
+}
+
+#divbusca {
+    background-color: #fff;
+    border: solid 1px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 30px;
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 18px;
+    border: 3px solid #e40810;
+    border-radius: 30px;
+    height: 100%;
+    max-width: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+body {
+    background-color: #0e0e0e;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.menu ul li {
+    text-decoration: none;
+}
+
+.menu ul a {
+    color: #FBC02C;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--font2);
+    align-items: center;
+
+}
+
+.menu ul a:hover {
+    color: #e40810;
+    transform: scale(1.5);
+    /* transform: rotate(20deg); */
+    text-shadow: 0px 5px 10px rgba(239, 180, 4, 0.6);
+
+}
+
+.hamburguer {
+    width: 50px;
+    height: 50px;
+    
+    fill: var(--branco);
+}
+
+
+.banner {
+
+    background-image:
+        url("../BlaMovi/Imagem/Movie-projector-retro-style_3840x2160\ 1.jpg");
+    width: 100%;
+    max-width: 1920px;
+    height: 700px;
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+
+
+}
+
+.onda {
+    width: 100%;
+    max-width: 1920px;
+    height: 300px;
+    background-image:url(Imagem/wave.svg) ;
+   background-repeat: no-repeat; 
+   background-size: cover;
+   position: absolute;
+   bottom: 0;
+
+}
+
+
+.favoritos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 60px;
+
+}
+
+.poster {
+    justify-content: space-between;
+}
+
+.poster>img {
+    width: 100%;
+    max-width: 180px;
+    height: 100%;
+    max-height: 250px;
+    /* margin: 10px; */
+
+    border-radius: 30px;
+    /* border: 2px solid #C12D6D; */
+    padding: 20px;
+
+}
+
+h2 {
+    font-family: var(--font2);
+    color: #FBC02C;
+    margin: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-family: var(--font2);
+    color: #FBC02C;
+    text-align: center;
+
+}
+
+.poster div {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+/* .poster div button{
+    width: 200px;
+    height:30px;
+    border-radius:30px;
+} */
+
+.poster div a{
+    width: 150px;
+    height:20px;
+    border-radius:5px;
+    background: #e8a806;
+    font-family: var(--font2);
+    font-size: 15px;
+    color: var(--branco);
+    text-align: center;
+    text-decoration: none;
+    text-shadow: #e40810;
+}
+
+.poster div a:hover{
+    border: #C12D6D;
+    color:#e40810;
+    background: #0f0;
+}
+/* .poster div img {
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+} */
+
+.poster:hover {
+    scale: 1.05;
+    border: 2px #e40810 double;
+    /* box-shadow: 0px 0px 10px 5px hsl(356, 92%, 48%); */
+    /* border: 5px solid hsl(321, 66%, 35%); */
+    /* transform: rotate(360deg); */
+    /* transition-duration: 2s; */
+
+}
+
+.poster {
+    background-color: #000;
+    border-radius: 10px;
+}
+
+span {
+    font-family: var(--font2);
+    color: var(--branco);
+}
+
+footer {
+    /* display: flex; */
+    background-image: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(1, 0, 20, 0) 25%, rgba(0, 0, 7, 0) 75%, rgba(0, 0, 0, 1) 100%), url(../BlaMovi/Imagem/footer.png);
+    margin: 30px;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height: 100px;
+}
+
+
+.contato {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+.contato a {
+    font-family: var(--font2);
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 18px;
+}
+
+.contato div img {
+    width: 50px;
+    height: 50px;
+}
+
+footer div img {
+    width: 40px;
+    height: 30px;
+}
+
+footer>div {
+    width: 100%;
+    max-width: 1920px;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    /* background-color: #FBC02C; */
+    margin: 10px;
+
+}
+
+footer ul a {
+    font-family: var(--font2);
+    color: #FBC02C;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+}
+
+footer ul a:hover {
+    color: #e408;
+    transform: scale(2.1);
+    text-shadow: 0px 5px 10px rgba(239, 180, 4, 0.6);
+}
+
+.contato img {
+    width: 100%;
+    max-width: 40px;
+    height: 100%;
+    max-height: 40px;
+    margin: 10px;
+}
+
+
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1365px) {
+    h1 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .card {}
+
+    .poster>img {}
+
+    .hamburguer {
+        display: none;
+    }
+
+    /* .poster:hover {
+        box-shadow: 0px 0px 10px 5px hsl(356, 92%, 48%);
+        border: 5px solid hsl(321, 66%, 35%);
+    } */
+
+}
+
+@media screen and (max-width: 360px) {
+    .menu ul a {
+        display: none;
+    }
+
+    #divbusca {
+        display: none;
+    }
+
+    .hamburguer {
+        display: initial;
+    }
+
+}
+
+/*CADASTRO*/
+/* CSS reset */
+*, *:before, *:after { 
+    margin:0;
+    padding:0;
+    font-family: Arial,sans-serif;
+  }
+  
+  body{
+    margin:10px;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  /* esconde as ancoras da tela */
+  a.links{
+    display: none;
+  }
+  
+  /* content que contem os formulários */
+  .content{
+    width: 500px;
+    margin: 0px auto;
+    position: relative; 
+  }
+  
+  /* formatando o cabeçalho dos formulários */
+  h1{
+    font-size: 48px;
+    color: #066a75;
+    padding: 10px 0;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  h1:after{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+    background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+  }
+  
+  p{
+    margin-bottom:15px;
+  }
+  p:first-child{
+    margin: 0px;
+  }
+  label{
+    color: #405c60;
+    position: relative;
+  }
+  
+  /**** advanced input styling ****/
+  /* placeholder */
+  ::-webkit-input-placeholder  {
+    color: #bebcbc; 
+    font-style: italic;
+  }
+  input:-moz-placeholder,
+  textarea:-moz-placeholder{
+    color: #bebcbc;
+    font-style: italic;
+  } 
+  input {
+    outline: none;
+  }
+  
+  input:not([type="checkbox"]){
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;  
+    border: 1px solid #b2b2b2;
+    
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+  /*estilo do botão submit */
+  input[type="submit"]{
+    width: 100%!important;
+    cursor: pointer;  
+    background: #3d9db3;
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 20px;  
+    border: 1px solid #fff; 
+    margin-bottom: 10px;  
+    text-shadow: 0 1px 1px #333;
+    
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    
+    transition: all 0.2s linear;
+  }
+  input[type="submit"]:hover{
+    background: #4ab3c6;
+  }
+  
+  /*marcando os links para mudar de um formulário para outro */
+  .link{
+    position: absolute;
+    background: #e1eaeb;
+    color: #7f7c7c;
+    left: 0px;
+    height: 20px;
+    width: 440px;
+    padding: 17px 30px 20px 30px;
+    font-size: 16px;
+    text-align: right;
+    border-top: 1px solid #dbe5e8;
+  
+    -webkit-border-radius: 0 0  5px 5px;
+    border-radius: 0 0  5px 5px;
+  }
+  .link a {
+    font-weight: bold;
+    background: #f7f8f1;
+    padding: 6px;
+    color: rgb(29, 162, 193);
+    margin-left: 10px;
+    border: 1px solid #cbd518;
+  
+    -webkit-border-radius: 4px;
+    border-radius: 4px;  
+  
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s  linear;
+  }
+  .link a:hover {
+    color: #39bfd7;
+    background: #f7f7f7;
+    border: 1px solid #4ab3c6;
+  }
+  
+  /* estilos para para ambos os formulários */
+  #cadastro, 
+  #login{
+    position: absolute;
+    top: 0px;
+    width: 88%; 
+    padding: 18px 6% 60px 6%;
+    margin: 0 0 35px 0;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(147, 184, 189,0.8);
+    
+    -webkit-box-shadow: 5px;
+    border-radius: 5px;
+    
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+  
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+  }
+  
+  #paracadastro:target ~ .content #cadastro,
+  #paralogin:target ~ .content #login{
+    z-index: 2;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s;
+  }
+  #registro:target ~ .content #login,
+  #paralogin:target ~ .content #cadastro{
+    -webkit-animation-name: fadeOutLeft;
+    animation-name: fadeOutLeft;
+  }
+  
+  /*fadeInLeft*/
+  @-webkit-keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /*fadeOutLeft*/
+  @-webkit-keyframes fadeOutLeft {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(-20px);
+    }
+  }
+  
+  @keyframes fadeOutLeft {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  }
